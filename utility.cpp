@@ -1,3 +1,4 @@
+
 // utility.cpp
 
 // IN THIS FILE, define any of your OWN functions you may need to 
@@ -11,11 +12,37 @@
 // these functions
 
 bool isOdd(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if((x%2)!=0){
+	return true;
+  }else{
+	return false;
+}
+
 }
 bool isEven(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if((x%2)==0){
+        return true;
+  }else{ 
+        return false;
+}
+
 }
 bool isPrime(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  int test = x/2;
+  if((x<2) && (x>-2)){
+	return false;
+  }
+
+  for(int i = 2; i<=test; i++){
+	if((x%i)==0){
+		return false;
+	}
+  }
+  for(int i = -2; i>=test; i--){
+        if((x%i)==0){
+                return false;
+        }
+  }
+
+return true;
 }
