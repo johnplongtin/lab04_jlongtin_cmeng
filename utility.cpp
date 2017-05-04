@@ -29,7 +29,7 @@ bool isEven(int x) {
 }
 bool isPrime(int x) { 
   int test = x/2;
-  if((x<2) && (x>-2)){
+  if(x<2){
 	return false;
   }
 
@@ -37,11 +37,6 @@ bool isPrime(int x) {
 	if((x%i)==0){
 		return false;
 	}
-  }
-  for(int i = -2; i>=test; i--){
-        if((x%i)==0){
-                return false;
-        }
   }
 
 return true;
