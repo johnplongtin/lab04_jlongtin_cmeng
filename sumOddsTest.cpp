@@ -1,6 +1,6 @@
 #include "arrayFuncs.h"
 #include "tddFuncs.h"
-
+//for several different arrays counts the number of odd numbers to see if the function works properly
 int main() {
   // code for sumOdds() cor 
   

@@ -1,6 +1,6 @@
 #include "arrayFuncs.h"
 #include "tddFuncs.h"
-
+//tests our previous max array functions for several different matricies that might cause error
 int main() {
  int fiveThrees[5]={3,3,3,3,3};
    assertEquals(3,

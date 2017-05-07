@@ -13,7 +13,7 @@
 
 bool isOdd(int x) { 
   if((x%2)!=0){
-	return true;
+	return true;  //if remainder is not divisble by 2 with no remainder it is odd
   }else{
 	return false;
 }
@@ -21,7 +21,7 @@ bool isOdd(int x) {
 }
 bool isEven(int x) { 
   if((x%2)==0){
-        return true;
+        return true; // if when dividing by 2 it returns a remainder of 0 it is even
   }else{ 
         return false;
 }
@@ -35,8 +35,8 @@ bool isPrime(int x) {
 
   for(int i = 2; i<=test; i++){
 	if((x%i)==0){
-		return false;
-	}
+		return false; //checks the first half of the integers leading to that number to make
+	}                     //sure that no numbers evenly go into it
   }
 
 return true;
